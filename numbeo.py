@@ -28,7 +28,7 @@ city_file = open("city-list.txt", "r")
 content = city_file.read()
 city_list = content.split("\n")
 city_file.close()
-city_cap_value = {}
+city_cap_value = {"City":STRING_TO_MATCH}
 
 for city in city_list:
 
@@ -58,6 +58,6 @@ for city in city_list:
     time.sleep(random.randint(1,9))
 
 # Write the results to output.txt and we're done!
-with open("output.txt", 'w') as f:
+with open("output.csv", 'w') as f:
     for key, value in city_cap_value.items():
         f.write('%s,%s\n' % (key, value))
