@@ -1,2 +1,2 @@
 # numbeo-soup
-Using BeautifulSoup to extract data points from Numbeo
+This script uses the Python BeautifulSoup library to extract specific city data from Numbeo.
